@@ -104,6 +104,56 @@ uint8_t button_basic_init(void (*callback)(button_t *data))
         return 1;
     }
     
+    /* set default timeout */
+    res = button_set_timeout(&gs_handle, BUTTON_BASIC_DEFAULT_TIMEOUT);
+    if (res != 0)
+    {
+        button_interface_debug_print("button: set timeout failed.\n");
+        (void)button_deinit(&gs_handle);
+        
+        return 1;
+    }
+    
+    /* set default interval */
+    res = button_set_interval(&gs_handle, BUTTON_BASIC_DEFAULT_INTERVAL);
+    if (res != 0)
+    {
+        button_interface_debug_print("button: set interval failed.\n");
+        (void)button_deinit(&gs_handle);
+        
+        return 1;
+    }
+    
+    /* set default short time */
+    res = button_set_short_time(&gs_handle, BUTTON_BASIC_DEFAULT_SHORT_TIME);
+    if (res != 0)
+    {
+        button_interface_debug_print("button: set short time failed.\n");
+        (void)button_deinit(&gs_handle);
+        
+        return 1;
+    }
+    
+    /* set default long time */
+    res = button_set_long_time(&gs_handle, BUTTON_BASIC_DEFAULT_LONG_TIME);
+    if (res != 0)
+    {
+        button_interface_debug_print("button: set long time failed.\n");
+        (void)button_deinit(&gs_handle);
+        
+        return 1;
+    }
+    
+    /* set default repeat time */
+    res = button_set_repeat_time(&gs_handle, BUTTON_BASIC_DEFAULT_REPEAT_TIME);
+    if (res != 0)
+    {
+        button_interface_debug_print("button: set repeat time failed.\n");
+        (void)button_deinit(&gs_handle);
+        
+        return 1;
+    }
+    
     return 0;
 }
 

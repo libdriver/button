@@ -51,6 +51,15 @@ extern "C"{
  */
 
 /**
+ * @brief button basic example default definition
+ */
+#define BUTTON_BASIC_DEFAULT_TIMEOUT                 1000 * 1000               /**< 1s */
+#define BUTTON_BASIC_DEFAULT_INTERVAL                5 * 1000                  /**< 5ms */
+#define BUTTON_BASIC_DEFAULT_SHORT_TIME              1000 * 1000               /**< 1s */
+#define BUTTON_BASIC_DEFAULT_LONG_TIME               3 * 1000 * 1000           /**< 3s */
+#define BUTTON_BASIC_DEFAULT_REPEAT_TIME             200 * 1000                /**< 200ms */
+
+/**
  * @brief     basic irq
  * @param[in] press_release is press or release
  * @return    status code
