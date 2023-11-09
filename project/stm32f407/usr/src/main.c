@@ -74,13 +74,23 @@ void HAL_GPIO_EXTI_Callback(uint16_t pin)
     if (pin == GPIO_PIN_0)
     {
         GPIO_PinState level;
-
-        /* delay 2ms */
-        HAL_Delay(2);
+        GPIO_PinState level_check;
 
         /* read level */
         level = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_0);
+        
+        /* delay 10ms */
+        HAL_Delay(10);
 
+        /* read level */
+        level_check = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_0);
+        
+        /* check level */
+        if (level != level_check)
+        {
+            return;
+        }
+        
         /* run the gpio riq */
         if (g_gpio_irq != NULL)
         {
