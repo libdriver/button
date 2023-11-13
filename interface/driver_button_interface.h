@@ -52,7 +52,7 @@ extern "C"{
 
 /**
  * @brief     interface timestamp read
- * @param[in] *t points to an button_time structure
+ * @param[in] *t points to a button_time structure
  * @return    status code
  *            - 0 success
  *            - 1 read failed
