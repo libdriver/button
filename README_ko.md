@@ -12,7 +12,7 @@
 
 LibDriver BUTTON은 LibDriver가 출시한 버튼의 전체 기능 드라이버입니다. 누르기, 놓기, 한 번 클릭, 두 번 클릭, 세 번 클릭, 반복 클릭, 짧게 누르기, 길게 누르기 및 기타 기능을 제공합니다. LibDriver는 MISRA를 준수합니다.
 
-LibDriver BUTTON은 단일 버튼 감지를 지원하며, 다중 버튼 또는 매트릭스 버튼 감지가 필요한 경우 [https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button)을 참조하세요.
+LibDriver BUTTON은 보다 효율적인 방법으로 단일 버튼 감지를 지원하며, 다중 버튼 또는 매트릭스 버튼 감지가 필요한 경우 [https://github.com/libdriver/multi_button](https://github.com/)을 참조하세요. libdriver/multi_button).
 
 ### 콘텐츠
 

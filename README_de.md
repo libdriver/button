@@ -12,7 +12,7 @@ Ein Druckknopf oder einfach Knopf ist ein einfacher Schaltmechanismus zur Steuer
 
 LibDriver BUTTON ist der voll funktionsfähige Button-Treiber, der von LibDriver gestartet wird. Es bietet Drücken, Loslassen, Einzelklick, Doppelklick, Dreifachklick, Wiederholungsklick, kurzes Drücken, langes Drücken und andere Funktionen. LibDriver ist MISRA-kompatibel.
 
-LibDriver BUTTON unterstützt die Erkennung einzelner Tasten. Wenn Sie eine Erkennung mehrerer Tasten oder Matrixtasten benötigen, lesen Sie bitte [https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
+LibDriver BUTTON unterstützt die Erkennung einzelner Tasten mit einer effizienteren Methode. Wenn Sie eine Erkennung mehrerer Tasten oder Matrixtasten benötigen, lesen Sie bitte [https://github.com/libdriver/multi_button](https://github.com/). libdriver/multi_button).
 
 ### Inhaltsverzeichnis
 

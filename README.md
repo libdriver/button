@@ -12,7 +12,7 @@ A push-button or simply button is a simple switch mechanism to control some aspe
 
 LibDriver BUTTON is the full function driver of button launched by LibDriver. It provides press, release,  single click, double click , triple click, repeat click, short press, long press and other functions. LibDriver is MISRA compliant.
 
-LibDriver BUTTON supports single button detection, and if you need multi-button or matrix-button detection, please refer to [https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
+LibDriver BUTTON supports single button detection with a more efficient method, and if you need multi-button or matrix-button detection, please refer to [https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
 
 ### Table of Contents
 

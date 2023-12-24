@@ -12,7 +12,7 @@
 
 LibDriver BUTTON是LibDriver推出的BUTTON全功能驱动，该驱动提供按压检测、释放检测、单击检测、双击检测、三击检测、重复按键检测、短按检测、长按检测等功能并且它符合MISRA标准。
 
-LibDriver BUTTON 支持单按键检测, 如果您需要多按键或者矩阵按键检测, 请参考[https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
+LibDriver BUTTON支持更高效的单按钮检测方法, 如果您需要多按键或者矩阵按键检测, 请参考[https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
 
 ### 目录
 
