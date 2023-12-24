@@ -12,6 +12,8 @@
 
 LibDriver BUTTON は、LibDriver によって起動されるボタンの全機能ドライバーです。 プレス、リリース、シングルクリック、ダブルクリック、トリプルクリック、リピートクリック、短押し、長押しなどの機能を提供します。 LibDriver は MISRA に準拠しています。
 
+LibDriver BUTTON は単一ボタンの検出をサポートしています。複数ボタンまたはマトリックスボタンの検出が必要な場合は、[https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button) を参照してください。
+
 ### 目次
 
   - [説明](#説明)

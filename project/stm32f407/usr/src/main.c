@@ -331,6 +331,8 @@ uint8_t button(uint8_t argc, char **argv)
             (void)gpio_interrupt_deinit();
             g_gpio_irq = NULL;
             g_period_irq = NULL;
+            
+            return 1;
         }
 
         /* gpio deinit */
@@ -363,6 +365,8 @@ uint8_t button(uint8_t argc, char **argv)
             (void)gpio_interrupt_deinit();
             g_gpio_irq = NULL;
             g_period_irq = NULL;
+            
+            return 1;
         }
 
         /* 100s timeout */
@@ -454,7 +458,7 @@ uint8_t button(uint8_t argc, char **argv)
     {
         /* print pin connection */
         button_interface_debug_print("button: INT connected to GPIOB PIN0.\n");
-
+        
         return 0;
     }
     else
