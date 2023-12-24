@@ -67,7 +67,7 @@ make test
 Find the compiled library in CMake. 
 
 ```cmake
-find_package(gpio REQUIRED)
+find_package(button REQUIRED)
 ```
 
 ### 3. BUTTON
