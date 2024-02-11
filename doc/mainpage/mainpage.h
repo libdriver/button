@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver BUTTON
- * @brief     libdriver button is a full function driver of button and it can run in both MCU and Linux platform.
+ * @brief     LibDriver BUTTON is a full function driver of BUTTON and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
