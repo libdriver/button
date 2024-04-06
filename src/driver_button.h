@@ -88,7 +88,7 @@ typedef struct button_s
  */
 typedef struct button_time_s
 {
-    uint32_t s;         /**< second */
+    uint64_t s;         /**< second */
     uint32_t us;        /**< microsecond */
 } button_time_t;
 
