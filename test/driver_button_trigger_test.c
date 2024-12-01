@@ -41,7 +41,7 @@ static volatile uint16_t gs_flag;        /**< flag */
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an button_t structure
+ * @param[in] *data pointer to an button_t structure
  * @note      none
  */
 static void a_receive_callback(button_t *data)
@@ -134,7 +134,7 @@ static void a_receive_callback(button_t *data)
 
 /**
  * @brief     trigger test irq
- * @param[in] press_release is press or release
+ * @param[in] press_release press or release
  * @return    status code
  *            - 0 success
  *            - 1 run failed

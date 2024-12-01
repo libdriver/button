@@ -152,40 +152,40 @@ typedef struct button_info_s
 
 /**
  * @brief     initialize button_handle_t structure
- * @param[in] HANDLE points to a button handle structure
- * @param[in] STRUCTURE is button_handle_t
+ * @param[in] HANDLE pointer to a button handle structure
+ * @param[in] STRUCTURE button_handle_t
  * @note      none
  */
 #define DRIVER_BUTTON_LINK_INIT(HANDLE, STRUCTURE)           memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link timestamp_read function
- * @param[in] HANDLE points to a button handle structure
- * @param[in] FUC points to a timestamp_read function address
+ * @param[in] HANDLE pointer to a button handle structure
+ * @param[in] FUC pointer to a timestamp_read function address
  * @note      none
  */
 #define DRIVER_BUTTON_LINK_TIMESTAMP_READ(HANDLE, FUC)      (HANDLE)->timestamp_read = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to a button handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to a button handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_BUTTON_LINK_DELAY_MS(HANDLE, FUC)            (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to a button handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to a button handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_BUTTON_LINK_DEBUG_PRINT(HANDLE, FUC)         (HANDLE)->debug_print = FUC
 
 /**
  * @brief     link receive_callback function
- * @param[in] HANDLE points to a button handle structure
- * @param[in] FUC points to a receive_callback function address
+ * @param[in] HANDLE pointer to a button handle structure
+ * @param[in] FUC pointer to a receive_callback function address
  * @note      none
  */
 #define DRIVER_BUTTON_LINK_RECEIVE_CALLBACK(HANDLE, FUC)    (HANDLE)->receive_callback = FUC
@@ -203,7 +203,7 @@ typedef struct button_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a button info structure
+ * @param[out] *info pointer to a button info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -213,8 +213,8 @@ uint8_t button_info(button_info_t *info);
 
 /**
  * @brief     irq handler
- * @param[in] *handle points to a button handle structure
- * @param[in] press_release is press or release
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] press_release press or release
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -229,7 +229,7 @@ uint8_t button_irq_handler(button_handle_t *handle, uint8_t press_release);
 
 /**
  * @brief     period handler
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -242,7 +242,7 @@ uint8_t button_period_handler(button_handle_t *handle);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -254,7 +254,7 @@ uint8_t button_init(button_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -265,8 +265,8 @@ uint8_t button_deinit(button_handle_t *handle);
 
 /**
  * @brief     set timeout
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -277,8 +277,8 @@ uint8_t button_set_timeout(button_handle_t *handle, uint32_t us);
 
 /**
  * @brief      get timeout
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -289,8 +289,8 @@ uint8_t button_get_timeout(button_handle_t *handle, uint32_t *us);
 
 /**
  * @brief     set interval
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -301,8 +301,8 @@ uint8_t button_set_interval(button_handle_t *handle, uint32_t us);
 
 /**
  * @brief      get interval
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -313,8 +313,8 @@ uint8_t button_get_interval(button_handle_t *handle, uint32_t *us);
 
 /**
  * @brief     set short time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -325,8 +325,8 @@ uint8_t button_set_short_time(button_handle_t *handle, uint32_t us);
 
 /**
  * @brief      get short time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -337,8 +337,8 @@ uint8_t button_get_short_time(button_handle_t *handle, uint32_t *us);
 
 /**
  * @brief     set long time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -349,8 +349,8 @@ uint8_t button_set_long_time(button_handle_t *handle, uint32_t us);
 
 /**
  * @brief      get long time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -361,8 +361,8 @@ uint8_t button_get_long_time(button_handle_t *handle, uint32_t *us);
 
 /**
  * @brief     set repeat time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -373,8 +373,8 @@ uint8_t button_set_repeat_time(button_handle_t *handle, uint32_t us);
 
 /**
  * @brief      get repeat time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

@@ -66,7 +66,7 @@ void EXTI0_IRQHandler(void)
 
 /**
  * @brief     gpio exti callback
- * @param[in] pin is the gpio pin
+ * @param[in] pin gpio pin
  * @note      none
  */
 void HAL_GPIO_EXTI_Callback(uint16_t pin)
@@ -108,7 +108,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t pin)
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an button_t structure
+ * @param[in] *data pointer to an button_t structure
  * @note      none
  */
 static void a_receive_callback(button_t *data)
@@ -201,8 +201,8 @@ static void a_receive_callback(button_t *data)
 
 /**
  * @brief     button full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed

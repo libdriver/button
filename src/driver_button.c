@@ -59,7 +59,7 @@
 
 /**
  * @brief     set param
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @note      none
  */
 static void a_button_set_param(button_handle_t *handle)
@@ -73,7 +73,7 @@ static void a_button_set_param(button_handle_t *handle)
 
 /**
  * @brief     reset all
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @note      none
  */
 static void a_button_reset(button_handle_t *handle)
@@ -96,7 +96,7 @@ static void a_button_reset(button_handle_t *handle)
 
 /**
  * @brief     period handler
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -339,8 +339,8 @@ uint8_t button_period_handler(button_handle_t *handle)
 
 /**
  * @brief     irq handler
- * @param[in] *handle points to a button handle structure
- * @param[in] press_release is press or release
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] press_release press or release
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -469,7 +469,7 @@ uint8_t button_irq_handler(button_handle_t *handle, uint8_t press_release)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -527,7 +527,7 @@ uint8_t button_init(button_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a button handle structure
+ * @param[in] *handle pointer to a button handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -552,8 +552,8 @@ uint8_t button_deinit(button_handle_t *handle)
 
 /**
  * @brief     set timeout
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -578,8 +578,8 @@ uint8_t button_set_timeout(button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get timeout
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -604,8 +604,8 @@ uint8_t button_get_timeout(button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set interval
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -630,8 +630,8 @@ uint8_t button_set_interval(button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get interval
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -656,8 +656,8 @@ uint8_t button_get_interval(button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set short time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -682,8 +682,8 @@ uint8_t button_set_short_time(button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get short time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -708,8 +708,8 @@ uint8_t button_get_short_time(button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set long time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -734,8 +734,8 @@ uint8_t button_set_long_time(button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get long time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -760,8 +760,8 @@ uint8_t button_get_long_time(button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief     set repeat time
- * @param[in] *handle points to a button handle structure
- * @param[in] us is the set time
+ * @param[in] *handle pointer to a button handle structure
+ * @param[in] us set time
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -786,8 +786,8 @@ uint8_t button_set_repeat_time(button_handle_t *handle, uint32_t us)
 
 /**
  * @brief      get repeat time
- * @param[in]  *handle points to a button handle structure
- * @param[out] *us points to a time buffer
+ * @param[in]  *handle pointer to a button handle structure
+ * @param[out] *us pointer to a time buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -812,7 +812,7 @@ uint8_t button_get_repeat_time(button_handle_t *handle, uint32_t *us)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a button info structure
+ * @param[out] *info pointer to a button info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

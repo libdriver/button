@@ -348,7 +348,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -393,8 +393,8 @@ Functions</h2></td></tr>
 <p>get interval </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -439,8 +439,8 @@ Functions</h2></td></tr>
 <p>get long time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -485,8 +485,8 @@ Functions</h2></td></tr>
 <p>get repeat time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,8 +531,8 @@ Functions</h2></td></tr>
 <p>get short time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -577,8 +577,8 @@ Functions</h2></td></tr>
 <p>get timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -613,7 +613,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a button info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a button info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -647,7 +647,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -693,8 +693,8 @@ Functions</h2></td></tr>
 <p>irq handler </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">press_release</td><td>is press or release </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">press_release</td><td>press or release </td></tr>
   </table>
   </dd>
 </dl>
@@ -732,7 +732,7 @@ Functions</h2></td></tr>
 <p>period handler </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -779,8 +779,8 @@ Functions</h2></td></tr>
 <p>set interval </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the set time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>set time </td></tr>
   </table>
   </dd>
 </dl>
@@ -825,8 +825,8 @@ Functions</h2></td></tr>
 <p>set long time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the set time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>set time </td></tr>
   </table>
   </dd>
 </dl>
@@ -871,8 +871,8 @@ Functions</h2></td></tr>
 <p>set repeat time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the set time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>set time </td></tr>
   </table>
   </dd>
 </dl>
@@ -917,8 +917,8 @@ Functions</h2></td></tr>
 <p>set short time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the set time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>set time </td></tr>
   </table>
   </dd>
 </dl>
@@ -963,8 +963,8 @@ Functions</h2></td></tr>
 <p>set timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a button handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the set time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a button handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>set time </td></tr>
   </table>
   </dd>
 </dl>

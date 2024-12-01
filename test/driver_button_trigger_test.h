@@ -52,7 +52,7 @@ extern "C"{
 
 /**
  * @brief     trigger test irq
- * @param[in] press_release is press or release
+ * @param[in] press_release press or release
  * @return    status code
  *            - 0 success
  *            - 1 run failed
