@@ -41,7 +41,7 @@
 
 /**
  * @brief     interface timestamp read
- * @param[in] *t points to a button_time structure
+ * @param[in] *t pointer to a button_time structure
  * @return    status code
  *            - 0 success
  *            - 1 read failed
@@ -64,7 +64,7 @@ uint8_t button_interface_timestamp_read(button_time_t *t)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void button_interface_delay_ms(uint32_t ms)
@@ -74,7 +74,7 @@ void button_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void button_interface_debug_print(const char *const fmt, ...)
@@ -94,7 +94,7 @@ void button_interface_debug_print(const char *const fmt, ...)
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an button_t structure
+ * @param[in] *data pointer to an button_t structure
  * @note      none
  */
 void button_interface_receive_callback(button_t *data)

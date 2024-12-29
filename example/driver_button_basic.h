@@ -61,7 +61,7 @@ extern "C"{
 
 /**
  * @brief     basic irq
- * @param[in] press_release is press or release
+ * @param[in] press_release press or release
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -81,7 +81,7 @@ uint8_t button_basic_period_handler(void);
 
 /**
  * @brief     basic example init
- * @param[in] *callback points to an irq callback address
+ * @param[in] *callback pointer to an irq callback address
  * @return    status code
  *            - 0 success
  *            - 1 init failed

@@ -52,7 +52,7 @@ volatile uint16_t g_flag;                                   /**< interrupt flag 
 
 /**
  * @brief     timer handler
- * @param[in] signum is the signal number
+ * @param[in] signum signal number
  * @note      none
  */
 static void a_timer_handler(int signum)
@@ -65,7 +65,7 @@ static void a_timer_handler(int signum)
 
 /**
  * @brief     interface receive callback
- * @param[in] *data points to an button_t structure
+ * @param[in] *data pointer to an button_t structure
  * @note      none
  */
 static void a_receive_callback(button_t *data)
@@ -158,8 +158,8 @@ static void a_receive_callback(button_t *data)
 
 /**
  * @brief     button full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -426,8 +426,8 @@ uint8_t button(uint8_t argc, char **argv)
 
 /**
  * @brief     main function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  * @note      none
