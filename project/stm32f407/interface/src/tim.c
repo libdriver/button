@@ -45,8 +45,8 @@ static void (*gs_tim_irq)(uint32_t us) = NULL;        /**< tim irq */
 
 /**
  * @brief     timer init
- * @param[in] us is the interrupt time
- * @param[in] *tim_irq points to a timer irq function address
+ * @param[in] us interrupt time
+ * @param[in] *tim_irq pointer to a timer irq function address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -147,7 +147,7 @@ uint8_t tim_stop(void)
 
 /**
  * @brief  get the timer handle
- * @return points to a timer handle
+ * @return pointer to a timer handle
  * @note   none
  */
 TIM_HandleTypeDef* tim_get_handle(void)
@@ -171,7 +171,7 @@ void tim_irq_handler(void)
 
 /**
  * @brief     timer period init
- * @param[in] us is the interrupt time
+ * @param[in] us interrupt time
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -218,7 +218,7 @@ uint8_t tim_period_init(uint32_t us)
 
 /**
  * @brief  get the timer period handle
- * @return points to a timer handle
+ * @return pointer to a timer handle
  * @note   none
  */
 TIM_HandleTypeDef* tim_period_get_handle(void)
