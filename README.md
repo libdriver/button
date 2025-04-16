@@ -10,7 +10,7 @@
 
 A push-button or simply button is a simple switch mechanism to control some aspect of a machine or a process. Buttons are typically made out of hard material, usually plastic or metal. The surface is usually flat or shaped to accommodate the human finger or hand, so as to be easily depressed or pushed. Buttons are most often biased switches, although many un-biased buttons (due to their physical nature) still require a spring to return to their un-pushed state.
 
-LibDriver BUTTON is the full function driver of button launched by LibDriver. It provides press, release,  single click, double click , triple click, repeat click, short press, long press and other functions. LibDriver is MISRA compliant.
+LibDriver BUTTON is a full-featured driver of button launched by LibDriver. It provides press, release,  single click, double click , triple click, repeat click, short press, long press and other functions. LibDriver is MISRA compliant.
 
 LibDriver BUTTON supports single button detection and can be run in a more efficient method, if you need multi-button or matrix-button detection, please refer to [https://github.com/libdriver/multi_button](https://github.com/libdriver/multi_button).
 
