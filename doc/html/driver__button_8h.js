@@ -1,5 +1,6 @@
 var driver__button_8h =
 [
+    [ "BUTTON_LENGTH", "group__button__basic__driver.html#ga354cbbed1a988b4136485a5d3ad4ec1c", null ],
     [ "DRIVER_BUTTON_LINK_DEBUG_PRINT", "group__button__link__driver.html#ga1f095bb88970fac4190588d7a3999c20", null ],
     [ "DRIVER_BUTTON_LINK_DELAY_MS", "group__button__link__driver.html#ga46a20d64253496b6705c1bb940cdd050", null ],
     [ "DRIVER_BUTTON_LINK_INIT", "group__button__link__driver.html#ga454117232efdee489b6be62e90909a06", null ],

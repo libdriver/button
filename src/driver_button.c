@@ -425,7 +425,7 @@ uint8_t button_irq_handler(button_handle_t *handle, uint8_t press_release)
         }
     }
     
-    if (handle->decode_len >= 127)                                         /* check the max length */
+    if (handle->decode_len >= (BUTTON_LENGTH - 1))                         /* check the max length */
     {
         a_button_reset(handle);                                            /* reset all */
     }

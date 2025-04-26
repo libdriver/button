@@ -57,6 +57,20 @@ extern "C"{
  */
 
 /**
+ * @brief button length definition
+ */
+#ifndef BUTTON_LENGTH
+    #define BUTTON_LENGTH      16          /**< 16 */
+#endif
+
+/**
+ * @brief check range
+ */
+#if (BUTTON_LENGTH < 8)
+    #error "BUTTON_LENGTH < 8"
+#endif
+
+/**
  * @brief button status enumeration definition
  */
 typedef enum
@@ -111,7 +125,7 @@ typedef struct button_handle_s
     void (*debug_print)(const char *const fmt, ...);        /**< point to a debug_print function address */
     void (*receive_callback)(button_t *data);               /**< point to a receive_callback function address */
     button_time_t last_time;                                /**< last time */
-    button_decode_t decode[128];                            /**< decode buffer */
+    button_decode_t decode[BUTTON_LENGTH];                  /**< decode buffer */
     uint16_t decode_len;                                    /**< decode length */
     uint8_t short_triggered;                                /**< short triggered */
     uint8_t long_triggered;                                 /**< long triggered */
