@@ -133,8 +133,9 @@ uint8_t button_period_handler(button_handle_t *handle)
         }
         if (handle->decode_len == 1)                                              /* short or long press */
         {
-            diff = (int64_t)(t.s - handle->decode[0].t.s) * 1000000 + 
-                   (int64_t)(t.us - handle->decode[0].t.us) ;                     /* now - last time */
+            diff = (int64_t)((int64_t)t.s - 
+                   (int64_t)handle->decode[0].t.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->decode[0].t.us);    /* now - last time */
             if ((uint32_t)(diff) >= handle->short_time)                           /* check short time */
             {
                 if (handle->short_triggered == 0)                                 /* if no triggered */
@@ -170,8 +171,9 @@ uint8_t button_period_handler(button_handle_t *handle)
         }
         else if (handle->decode_len == 2)                                         /* single click, short or long press */
         {
-            diff = (int64_t)(t.s - handle->decode[1].t.s) * 1000000 + 
-                   (int64_t)(t.us - handle->decode[1].t.us) ;                     /* now - last time */
+            diff = (int64_t)((int64_t)t.s - 
+                   (int64_t)handle->decode[1].t.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->decode[1].t.us);    /* now - last time */
             if (handle->long_triggered != 0)                                      /* if long no triggered */
             {
                 button_t button;
@@ -205,8 +207,9 @@ uint8_t button_period_handler(button_handle_t *handle)
         }
         else if (handle->decode_len == 4)                                         /* double click */
         {
-            diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-                   (int64_t)(t.us - handle->last_time.us) ;                       /* now - last time */
+            diff = (int64_t)((int64_t)t.s - 
+                   (int64_t)handle->last_time.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);      /* now - last time */
             if ((uint32_t)(diff) >= handle->repeat_time)                          /* check repeat time */
             {
                 button_t button;
@@ -243,8 +246,9 @@ uint8_t button_period_handler(button_handle_t *handle)
         }
         else if (handle->decode_len == 6)                                         /* triple click */
         {
-            diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-                   (int64_t)(t.us - handle->last_time.us) ;                       /* now - last time */
+            diff = (int64_t)((int64_t)t.s - 
+                   (int64_t)handle->last_time.s) * 1000000 + 
+                   (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);      /* now - last time */
             if ((uint32_t)(diff) >= handle->repeat_time)                          /* check repeat time */
             {
                 button_t button;
@@ -283,8 +287,9 @@ uint8_t button_period_handler(button_handle_t *handle)
         {
             if ((handle->decode_len > 6) && (handle->decode_len % 2 == 0))        /* check time */
             {
-                diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-                       (int64_t)(t.us - handle->last_time.us) ;                   /* now - last time */
+                diff = (int64_t)((int64_t)t.s - 
+                       (int64_t)handle->last_time.s) * 1000000 + 
+                       (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);  /* now - last time */
                 if ((uint32_t)(diff) >= handle->repeat_time)                      /* check repeat time */
                 {
                     button_t button;
@@ -321,8 +326,9 @@ uint8_t button_period_handler(button_handle_t *handle)
             }
             else
             {
-                diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-                       (int64_t)(t.us - handle->last_time.us) ;                   /* now - last time */
+                diff = (int64_t)((int64_t)t.s - 
+                       (int64_t)handle->last_time.s) * 1000000 + 
+                       (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);  /* now - last time */
                 if ((uint32_t)(diff) >= handle->timeout)                          /* check timeout */
                 {
                     handle->debug_print("button: reset checking.\n");             /* reset checking */
@@ -373,8 +379,9 @@ uint8_t button_irq_handler(button_handle_t *handle, uint8_t press_release)
         
         return 1;                                                          /* return error */
     }
-    diff = (int64_t)(t.s - handle->last_time.s) * 1000000 + 
-           (int64_t)(t.us - handle->last_time.us) ;                        /* now - last time */
+    diff = (int64_t)((int64_t)t.s - 
+           (int64_t)handle->last_time.s) * 1000000 + 
+           (int64_t)((int64_t)t.us - (int64_t)handle->last_time.us);       /* now - last time */
     if (press_release != 0)                                                /* if press */
     {
         if ((handle->decode_len % 2) == 0)                                 /* press */
